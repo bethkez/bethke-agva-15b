@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+  <head>
+   
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+<body>
+  <div class="menu-layout">
+    <div class="menu-item">Home</div>
+    <div class="menu-item">Products and Services</div>
+    <div class="menu-item"><a href="contactus.html">Contact Us</a></div>
+  </div>
+  
+  <div class="column-layout">
+    <div class="main-column">
+      <h2>Welcome to Bethke Graphics!</h2>
+      <p>
+        My business is all about making sure that you get to have those 
+        photographs of your favorite memories for the rest of your life. 
+        I take senior pictures, family photos, headshots, wedding photos 
+        and much more. Just call if you need a memory frozen in time!
+      </p>
+    </div>
+    <div class="side-bar">
+      <img 
+        id="logo"
+        src="https://cdn.glitch.global/382d070c-940d-4e6c-a719-2167d5faff12/Bethke%20Graphics.jpg?v=1669147058476"
+      />
+      <ul>
+        <li>Senior Pictures</li>
+        <li>Wedding Pictures</li>
+        <li>Photography Classes</li>
+      </ul>
+    </div>
+  </div>
+  <div id="specialoffers" class="call-outs-container">
+    <div class="call-out">
+      <h4>Photography Class Sale</h4>
+      <p>
+        I'm offering photography classes on sale for $150 per person! 
+        The class involves 2 hour sessions that meet on Friday and Saturday 
+        for two weeks. You'll also learn to edit all of your photos.
+      </p>
+      <button>Learn More</button>
+    </div>
+    
+    <div class="call-out">
+      <h4>Senior Picture Sessions</h4>
+      <p>
+        Senior Pictures Sessions are now in full swing! I'm offering 2 hour 
+        sessions for $400 per sessions. You can contact me personally to set 
+        up a session and location! Can't wait to see all you Seniors!
+      </p>
+      <button>Learn More</button>
+    </div>
+    
+  </div>
+  
+  <div style="text-align:center; background-color: #638575;">
+    <button id="hidebutton" onclick="hideAds()">Hide Offers</button></div>
+  
+  <script>
+    function hideAds() {
+      var x = document.getElementById("specialoffers");
+      var y = document.getElementById("hidebutton");
+      x.style.display = "none";
+      y.style.display = "none";
+    }
+  </script>
+</body>
